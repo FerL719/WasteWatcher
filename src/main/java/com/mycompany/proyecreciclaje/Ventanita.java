@@ -11,7 +11,7 @@ package com.mycompany.proyecreciclaje;
 public class Ventanita {
 
     public static void main(String[] args) {
-        System.out.println("hola pinshis enejos");
+        
         //Inicia la aplicacion con la ventana de login
         java.awt.EventQueue.invokeLater(() -> {
             new login().setVisible(true);
