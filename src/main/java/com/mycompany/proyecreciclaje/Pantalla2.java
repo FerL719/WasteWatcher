@@ -27,17 +27,17 @@ public class Pantalla2 extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        BotonReciclaje = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jPanel2 = new javax.swing.JPanel();
+        basura = new javax.swing.JLabel();
+        LogrosBoton = new javax.swing.JButton();
+        MiHistorialBoton = new javax.swing.JButton();
+        TiendaBoton = new javax.swing.JButton();
+        UsuarioPuntos = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jPanel3 = new javax.swing.JPanel();
+        Mascota = new javax.swing.JLabel();
+        LadoOjitasDerecho = new javax.swing.JLabel();
+        LadoOjitasIzquierdo = new javax.swing.JLabel();
+        MensajeLogros = new javax.swing.JPanel();
         jLabel9 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -45,38 +45,38 @@ public class Pantalla2 extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(203, 221, 181));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        BotonReciclaje.setIcon(new javax.swing.ImageIcon("C:\\Users\\valer\\Downloads\\WhatsApp_Image_2025-07-03_at_11.37.51_AM__1_-removebg-preview (1) (1) (1).png")); // NOI18N
-        BotonReciclaje.setText("BotonReciclaje");
-        BotonReciclaje.addMouseListener(new java.awt.event.MouseAdapter() {
+        basura.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/reciclaje 2.png"))); // NOI18N
+        basura.setText("BotonReciclaje");
+        basura.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                BotonReciclajeMouseClicked(evt);
+                basuraMouseClicked(evt);
             }
         });
-        jPanel1.add(BotonReciclaje, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 60, 220, -1));
+        jPanel1.add(basura, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 60, 220, -1));
 
-        jButton1.setBackground(new java.awt.Color(51, 107, 5));
-        jButton1.setText("🍃Logros");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        LogrosBoton.setBackground(new java.awt.Color(51, 107, 5));
+        LogrosBoton.setText("🍃Logros");
+        LogrosBoton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                LogrosBotonActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 360, 151, 64));
+        jPanel1.add(LogrosBoton, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 360, 151, 64));
 
-        jButton2.setBackground(new java.awt.Color(51, 107, 5));
-        jButton2.setText("🍃Mi Historial");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        MiHistorialBoton.setBackground(new java.awt.Color(51, 107, 5));
+        MiHistorialBoton.setText("🍃Mi Historial");
+        MiHistorialBoton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                MiHistorialBotonActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 270, 151, 64));
+        jPanel1.add(MiHistorialBoton, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 270, 151, 64));
 
-        jButton3.setBackground(new java.awt.Color(51, 107, 5));
-        jButton3.setText("🍃Tienda");
-        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 460, 151, 64));
+        TiendaBoton.setBackground(new java.awt.Color(51, 107, 5));
+        TiendaBoton.setText("🍃Tienda");
+        jPanel1.add(TiendaBoton, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 460, 151, 64));
 
-        jPanel2.setBackground(new java.awt.Color(33, 124, 97));
+        UsuarioPuntos.setBackground(new java.awt.Color(33, 124, 97));
 
         jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("Usuario_181");
@@ -84,64 +84,64 @@ public class Pantalla2 extends javax.swing.JFrame {
         jLabel3.setBackground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("🍃218");
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
+        javax.swing.GroupLayout UsuarioPuntosLayout = new javax.swing.GroupLayout(UsuarioPuntos);
+        UsuarioPuntos.setLayout(UsuarioPuntosLayout);
+        UsuarioPuntosLayout.setHorizontalGroup(
+            UsuarioPuntosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(UsuarioPuntosLayout.createSequentialGroup()
                 .addGap(65, 65, 65)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 438, Short.MAX_VALUE)
                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(65, 65, 65))
         );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
+        UsuarioPuntosLayout.setVerticalGroup(
+            UsuarioPuntosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(UsuarioPuntosLayout.createSequentialGroup()
                 .addGap(27, 27, 27)
                 .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(24, 24, 24))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, UsuarioPuntosLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
-        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 760, 50));
+        jPanel1.add(UsuarioPuntos, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 760, 50));
 
-        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\valer\\Downloads\\Captura_de_pantalla_2025-07-04_083946-removebg-preview.png")); // NOI18N
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 410, 200, 200));
+        Mascota.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/mascota no se.png"))); // NOI18N
+        jPanel1.add(Mascota, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 410, 200, 200));
 
-        jLabel5.setIcon(new javax.swing.ImageIcon("C:\\Users\\valer\\Downloads\\WhatsApp Image 2025-07-04 at 8.56.48 AM.jpeg")); // NOI18N
-        jLabel5.setText("jLabel5");
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 50, 80, 560));
+        LadoOjitasDerecho.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/Foto de los lados ojitas.jpeg"))); // NOI18N
+        LadoOjitasDerecho.setText("jLabel5");
+        jPanel1.add(LadoOjitasDerecho, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 50, 80, 560));
 
-        jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\valer\\Downloads\\WhatsApp Image 2025-07-04 at 8.56.48 AM.jpeg")); // NOI18N
-        jLabel6.setText("jLabel6");
-        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 50, 90, 560));
+        LadoOjitasIzquierdo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/Foto de los lados ojitas.jpeg"))); // NOI18N
+        LadoOjitasIzquierdo.setText("Lado ojitas");
+        jPanel1.add(LadoOjitasIzquierdo, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 50, 90, 560));
 
-        jPanel3.setBackground(new java.awt.Color(148, 193, 50));
+        MensajeLogros.setBackground(new java.awt.Color(148, 193, 50));
 
         jLabel9.setText("¡Reciclaje completado!");
 
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
+        javax.swing.GroupLayout MensajeLogrosLayout = new javax.swing.GroupLayout(MensajeLogros);
+        MensajeLogros.setLayout(MensajeLogrosLayout);
+        MensajeLogrosLayout.setHorizontalGroup(
+            MensajeLogrosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(MensajeLogrosLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(15, Short.MAX_VALUE))
         );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
+        MensajeLogrosLayout.setVerticalGroup(
+            MensajeLogrosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(MensajeLogrosLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 50, 150, 40));
+        jPanel1.add(MensajeLogros, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 50, 150, 40));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -157,21 +157,21 @@ public class Pantalla2 extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void LogrosBotonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LogrosBotonActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_LogrosBotonActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void MiHistorialBotonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MiHistorialBotonActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_MiHistorialBotonActionPerformed
 
-    private void BotonReciclajeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotonReciclajeMouseClicked
+    private void basuraMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_basuraMouseClicked
         // TODO add your handling code here:
        //este espacio es para configurar un boton 
-        Reciclaje vueltaPantalla=new Reciclaje();
-        vueltaPantalla.setVisible(true);
-        dispose();
-    }//GEN-LAST:event_BotonReciclajeMouseClicked
+       Reciclaje botella = new Reciclaje ();
+       botella.setVisible(true);
+       dispose();
+    }//GEN-LAST:event_basuraMouseClicked
 
     /**
      * @param args the command line arguments
@@ -179,18 +179,18 @@ public class Pantalla2 extends javax.swing.JFrame {
     
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel BotonReciclaje;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
+    private javax.swing.JLabel LadoOjitasDerecho;
+    private javax.swing.JLabel LadoOjitasIzquierdo;
+    private javax.swing.JButton LogrosBoton;
+    private javax.swing.JLabel Mascota;
+    private javax.swing.JPanel MensajeLogros;
+    private javax.swing.JButton MiHistorialBoton;
+    private javax.swing.JButton TiendaBoton;
+    private javax.swing.JPanel UsuarioPuntos;
+    private javax.swing.JLabel basura;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
     // End of variables declaration//GEN-END:variables
 }
