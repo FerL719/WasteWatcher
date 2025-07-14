@@ -8,12 +8,12 @@ package com.mycompany.proyecreciclaje;
  *
  * @author valer
  */
-public class Pantalla2 extends javax.swing.JFrame {
+public class PantallaPrincipal extends javax.swing.JFrame {
 
     /**
      * Creates new form Pantalla2
      */
-    public Pantalla2() {
+    public PantallaPrincipal() {
         initComponents();
     }
 
