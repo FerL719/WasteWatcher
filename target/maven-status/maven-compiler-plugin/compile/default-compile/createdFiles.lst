@@ -12,6 +12,7 @@ com\mycompany\proyecreciclaje\PantallaPrincipal$2.class
 com\mycompany\proyecreciclaje\Historial.class
 com\mycompany\proyecreciclaje\ProyecReciclaje.class
 com\mycompany\proyecreciclaje\Reciclaje$2.class
+com\mycompany\proyecreciclaje\OtrasOpcionesReciclar$3.class
 com\mycompany\proyecreciclaje\PantallaPrincipal$3.class
 com\mycompany\proyecreciclaje\OtrasOpcionesReciclar.class
 com\mycompany\proyecreciclaje\Register$1.class
@@ -19,5 +20,6 @@ com\mycompany\proyecreciclaje\Historial$1.class
 com\mycompany\proyecreciclaje\Reciclaje$1.class
 com\mycompany\proyecreciclaje\Reciclaje.class
 com\mycompany\proyecreciclaje\Login.class
+com\mycompany\proyecreciclaje\OtrasOpcionesReciclar$2.class
 com\mycompany\proyecreciclaje\Logros.class
 com\mycompany\proyecreciclaje\Register.class
