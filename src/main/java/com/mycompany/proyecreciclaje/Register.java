@@ -112,7 +112,7 @@ public class Register extends javax.swing.JFrame {
         jPanel1.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 360, 270, -1));
 
         jLabel8.setForeground(new java.awt.Color(0, 153, 0));
-        jLabel8.setText("id_usuario");
+        jLabel8.setText("usuario");
         jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 266, -1, 20));
 
         jTextField5.addActionListener(new java.awt.event.ActionListener() {
