@@ -34,6 +34,7 @@ public class PantallaPrincipal extends javax.swing.JFrame {
         UsuarioPuntos = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
         Mascota = new javax.swing.JLabel();
         LadoOjitasDerecho = new javax.swing.JLabel();
         LadoOjitasIzquierdo = new javax.swing.JLabel();
@@ -74,7 +75,7 @@ public class PantallaPrincipal extends javax.swing.JFrame {
 
         TiendaBoton.setBackground(new java.awt.Color(51, 107, 5));
         TiendaBoton.setText("🍃Tienda");
-        jPanel1.add(TiendaBoton, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 460, 151, 64));
+        jPanel1.add(TiendaBoton, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 450, 151, 64));
 
         UsuarioPuntos.setBackground(new java.awt.Color(33, 124, 97));
 
@@ -84,6 +85,8 @@ public class PantallaPrincipal extends javax.swing.JFrame {
         jLabel3.setBackground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("🍃218");
 
+        jLabel2.setText("jLabel2");
+
         javax.swing.GroupLayout UsuarioPuntosLayout = new javax.swing.GroupLayout(UsuarioPuntos);
         UsuarioPuntos.setLayout(UsuarioPuntosLayout);
         UsuarioPuntosLayout.setHorizontalGroup(
@@ -91,20 +94,27 @@ public class PantallaPrincipal extends javax.swing.JFrame {
             .addGroup(UsuarioPuntosLayout.createSequentialGroup()
                 .addGap(65, 65, 65)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 438, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 372, Short.MAX_VALUE)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(5, 5, 5)
                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(65, 65, 65))
         );
         UsuarioPuntosLayout.setVerticalGroup(
             UsuarioPuntosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(UsuarioPuntosLayout.createSequentialGroup()
-                .addGap(27, 27, 27)
-                .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(24, 24, 24))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, UsuarioPuntosLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+                .addGroup(UsuarioPuntosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(UsuarioPuntosLayout.createSequentialGroup()
+                        .addGroup(UsuarioPuntosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addGroup(UsuarioPuntosLayout.createSequentialGroup()
+                                .addGap(21, 21, 21)
+                                .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addGap(24, 24, 24))
+                    .addGroup(UsuarioPuntosLayout.createSequentialGroup()
+                        .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addContainerGap())))
         );
 
         jPanel1.add(UsuarioPuntos, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 760, 50));
@@ -189,6 +199,7 @@ public class PantallaPrincipal extends javax.swing.JFrame {
     private javax.swing.JPanel UsuarioPuntos;
     private javax.swing.JLabel basura;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
