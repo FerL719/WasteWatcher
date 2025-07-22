@@ -32,7 +32,6 @@ public class Reciclaje extends javax.swing.JFrame {
         Texto = new javax.swing.JLabel();
         ImagenBolsa = new javax.swing.JLabel();
         ImagenHojita = new javax.swing.JLabel();
-        BotonRegreso = new javax.swing.JButton();
         BotonPlastico = new javax.swing.JButton();
         BotonAluminio = new javax.swing.JButton();
         BotonVidrio = new javax.swing.JButton();
@@ -41,6 +40,7 @@ public class Reciclaje extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -56,8 +56,10 @@ public class Reciclaje extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         PnatallaCompleta.setBackground(new java.awt.Color(203, 221, 181));
+        PnatallaCompleta.setPreferredSize(new java.awt.Dimension(760, 610));
 
         BarraArriba.setBackground(new java.awt.Color(33, 124, 97));
+        BarraArriba.setPreferredSize(new java.awt.Dimension(760, 67));
 
         javax.swing.GroupLayout BarraArribaLayout = new javax.swing.GroupLayout(BarraArriba);
         BarraArriba.setLayout(BarraArribaLayout);
@@ -67,7 +69,7 @@ public class Reciclaje extends javax.swing.JFrame {
         );
         BarraArribaLayout.setVerticalGroup(
             BarraArribaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 53, Short.MAX_VALUE)
+            .addGap(0, 67, Short.MAX_VALUE)
         );
 
         Texto.setBackground(new java.awt.Color(51, 107, 5));
@@ -81,25 +83,32 @@ public class Reciclaje extends javax.swing.JFrame {
         ImagenHojita.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/HojitaTexto.png"))); // NOI18N
         ImagenHojita.setText("jLabel7");
 
-        BotonRegreso.setBackground(new java.awt.Color(33, 124, 97));
-        BotonRegreso.setText("←Back");
-        BotonRegreso.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                BotonRegresoMouseClicked(evt);
-            }
-        });
-
         BotonPlastico.setBackground(new java.awt.Color(51, 107, 5));
         BotonPlastico.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         BotonPlastico.setText("Plástico");
+        BotonPlastico.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                BotonPlasticoMouseClicked(evt);
+            }
+        });
 
         BotonAluminio.setBackground(new java.awt.Color(46, 125, 50));
         BotonAluminio.setFont(new java.awt.Font("sansserif", 0, 18)); // NOI18N
         BotonAluminio.setText("Aluminio");
+        BotonAluminio.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                BotonAluminioMouseClicked(evt);
+            }
+        });
 
         BotonVidrio.setBackground(new java.awt.Color(27, 94, 32));
         BotonVidrio.setFont(new java.awt.Font("sansserif", 0, 18)); // NOI18N
         BotonVidrio.setText("Vidrio");
+        BotonVidrio.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                BotonVidrioMouseClicked(evt);
+            }
+        });
 
         BotonOtro.setBackground(new java.awt.Color(15, 107, 47));
         BotonOtro.setFont(new java.awt.Font("sansserif", 0, 18)); // NOI18N
@@ -121,11 +130,19 @@ public class Reciclaje extends javax.swing.JFrame {
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/Otro.png"))); // NOI18N
 
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/Flecharegreso..png"))); // NOI18N
+        jLabel5.setText("jLabel5");
+        jLabel5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel5MouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout PnatallaCompletaLayout = new javax.swing.GroupLayout(PnatallaCompleta);
         PnatallaCompleta.setLayout(PnatallaCompletaLayout);
         PnatallaCompletaLayout.setHorizontalGroup(
             PnatallaCompletaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(BarraArriba, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(BarraArriba, javax.swing.GroupLayout.DEFAULT_SIZE, 739, Short.MAX_VALUE)
             .addGroup(PnatallaCompletaLayout.createSequentialGroup()
                 .addGroup(PnatallaCompletaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PnatallaCompletaLayout.createSequentialGroup()
@@ -140,7 +157,7 @@ public class Reciclaje extends javax.swing.JFrame {
                             .addGroup(PnatallaCompletaLayout.createSequentialGroup()
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(BotonOtro, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(26, 26, 26))
+                        .addGap(0, 0, 0))
                     .addGroup(PnatallaCompletaLayout.createSequentialGroup()
                         .addGap(28, 28, 28)
                         .addComponent(ImagenHojita, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -149,22 +166,21 @@ public class Reciclaje extends javax.swing.JFrame {
                         .addGap(18, 18, Short.MAX_VALUE)))
                 .addGroup(PnatallaCompletaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(PnatallaCompletaLayout.createSequentialGroup()
-                        .addGroup(PnatallaCompletaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(PnatallaCompletaLayout.createSequentialGroup()
-                                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(0, 36, Short.MAX_VALUE))
-                            .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addContainerGap())
-                    .addGroup(PnatallaCompletaLayout.createSequentialGroup()
                         .addGap(6, 6, 6)
                         .addGroup(PnatallaCompletaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PnatallaCompletaLayout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(BotonRegreso, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(22, 22, 22))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(PnatallaCompletaLayout.createSequentialGroup()
+                        .addGroup(PnatallaCompletaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(PnatallaCompletaLayout.createSequentialGroup()
+                                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(0, 36, Short.MAX_VALUE))
+                            .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PnatallaCompletaLayout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addContainerGap())))
         );
         PnatallaCompletaLayout.setVerticalGroup(
             PnatallaCompletaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -193,20 +209,14 @@ public class Reciclaje extends javax.swing.JFrame {
                         .addGroup(PnatallaCompletaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(BotonOtro, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(28, 28, 28)
-                        .addComponent(BotonRegreso, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(300, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel5)
+                        .addContainerGap())
                     .addGroup(PnatallaCompletaLayout.createSequentialGroup()
-                        .addGap(30, 30, 30)
-                        .addComponent(ImagenBolsa, javax.swing.GroupLayout.PREFERRED_SIZE, 386, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))))
-        );
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(PnatallaCompleta, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(PnatallaCompleta, javax.swing.GroupLayout.DEFAULT_SIZE, 739, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -218,19 +228,40 @@ public class Reciclaje extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void BotonRegresoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotonRegresoMouseClicked
-        // TODO add your handling code here:
-        PantallaPrincipal Boton=new PantallaPrincipal();
-        Boton.setVisible(true);
-        dispose();
-    }//GEN-LAST:event_BotonRegresoMouseClicked
-
     private void BotonOtroMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotonOtroMouseClicked
 
         OtrasOpcionesReciclar Otro=new OtrasOpcionesReciclar();
         Otro.setVisible(true);
         dispose();
     }//GEN-LAST:event_BotonOtroMouseClicked
+
+    private void BotonPlasticoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotonPlasticoMouseClicked
+        // TODO add your handling code here:
+       PantallaReciclarPlastico plastico = new PantallaReciclarPlastico ();
+       plastico.setVisible(true);
+       dispose();
+    }//GEN-LAST:event_BotonPlasticoMouseClicked
+
+    private void BotonAluminioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotonAluminioMouseClicked
+        // TODO add your handling code here:
+        PantallaReciclarAluminio aluminio = new PantallaReciclarAluminio ();
+       aluminio.setVisible(true);
+       dispose();
+    }//GEN-LAST:event_BotonAluminioMouseClicked
+
+    private void jLabel5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel5MouseClicked
+        // TODO add your handling code here:
+        PantallaPrincipal regreso = new PantallaPrincipal ();
+       regreso.setVisible(true);
+       dispose();
+    }//GEN-LAST:event_jLabel5MouseClicked
+
+    private void BotonVidrioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotonVidrioMouseClicked
+        // TODO add your handling code here:
+        PantallaReciclarVidrio vidrio = new PantallaReciclarVidrio ();
+       vidrio.setVisible(true);
+       dispose();
+    }//GEN-LAST:event_BotonVidrioMouseClicked
 
     /**
      * @param args the command line arguments
@@ -274,7 +305,6 @@ public class Reciclaje extends javax.swing.JFrame {
     private javax.swing.JButton BotonAluminio;
     private javax.swing.JButton BotonOtro;
     private javax.swing.JButton BotonPlastico;
-    private javax.swing.JButton BotonRegreso;
     private javax.swing.JButton BotonVidrio;
     private javax.swing.JLabel ImagenBolsa;
     private javax.swing.JLabel ImagenHojita;
@@ -284,6 +314,7 @@ public class Reciclaje extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
