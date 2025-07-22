@@ -153,9 +153,7 @@ public class Reciclaje extends javax.swing.JFrame {
                             .addGroup(PnatallaCompletaLayout.createSequentialGroup()
                                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(0, 36, Short.MAX_VALUE))
-                            .addGroup(PnatallaCompletaLayout.createSequentialGroup()
-                                .addGap(0, 0, 0)
-                                .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                            .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addContainerGap())
                     .addGroup(PnatallaCompletaLayout.createSequentialGroup()
                         .addGap(6, 6, 6)
@@ -197,7 +195,7 @@ public class Reciclaje extends javax.swing.JFrame {
                             .addComponent(BotonOtro, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(28, 28, 28)
                         .addComponent(BotonRegreso, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(752, Short.MAX_VALUE))
+                        .addContainerGap(300, Short.MAX_VALUE))
                     .addGroup(PnatallaCompletaLayout.createSequentialGroup()
                         .addGap(30, 30, 30)
                         .addComponent(ImagenBolsa, javax.swing.GroupLayout.PREFERRED_SIZE, 386, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -213,7 +211,7 @@ public class Reciclaje extends javax.swing.JFrame {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(PnatallaCompleta, javax.swing.GroupLayout.PREFERRED_SIZE, 897, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(PnatallaCompleta, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 
