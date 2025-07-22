@@ -13,6 +13,7 @@ import org.jfree.chart.plot.PiePlot;
 import org.jfree.data.category.DefaultCategoryDataset;
 import org.jfree.data.general.DefaultPieDataset;
 import org.jfree.chart.plot.PlotOrientation;
+import org.jfree.chart.plot.CategoryPlot;
 /**
  *
  * @author Luis
@@ -39,6 +40,10 @@ setLocationRelativeTo(null);
         "Residuos reciclados", "Semana", "Cantidad", barras,
         PlotOrientation.VERTICAL, true, true, false
     );
+    CategoryPlot plotBarras = chartBarras.getCategoryPlot();
+    plotBarras.getRenderer().setSeriesPaint(0, new Color(33, 124, 97)); // Color para Plástico
+    plotBarras.getRenderer().setSeriesPaint(1, new Color(17, 42, 38));  // Color para Cartón
+    plotBarras.getRenderer().setSeriesPaint(2, new Color(51, 107, 5));   // Color para Vidrio
 
     ChartPanel chartPanelBarras = new ChartPanel(chartBarras);
     jPanel1.setLayout(new BorderLayout());
@@ -48,15 +53,18 @@ setLocationRelativeTo(null);
 
     // 🥧 Gráfica de pastel tipo semicírculo — jPanel2
     DefaultPieDataset pastel = new DefaultPieDataset();
-    pastel.setValue("Plástico", 47);
+    pastel.setValue("Residuo", 47);
     pastel.setValue("Restante", 53); // para simular semicírculo
 
     JFreeChart chartPastel = ChartFactory.createPieChart(
-        "Prevención Plástico", pastel, false, true, false
+        "Prevención de Residuos", pastel, false, true, false
     );
 
     PiePlot plot = (PiePlot) chartPastel.getPlot();
     plot.setStartAngle(180); // semicírculo
+    
+    plot.setSectionPaint("Residuo", new Color(51, 107, 5));
+plot.setSectionPaint("Restante", new Color(148, 193, 50)); // fondo pastel claro
 
     ChartPanel chartPanelPastel = new ChartPanel(chartPastel);
     jPanel2.setLayout(new BorderLayout());
@@ -74,7 +82,10 @@ setLocationRelativeTo(null);
         "Puntos ganados", "Semana", "Cantidad", linea,
         PlotOrientation.VERTICAL, true, true, false
     );
+    CategoryPlot plotLinea = chartLinea.getCategoryPlot();
+plotLinea.getRenderer().setSeriesPaint(0, new Color(33, 124, 97)); // Color de la línea
 
+    
     ChartPanel chartPanelLinea = new ChartPanel(chartLinea);
     jPanel3.setLayout(new BorderLayout());
     jPanel3.removeAll();
@@ -97,6 +108,7 @@ setLocationRelativeTo(null);
         jPanel2 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(148, 193, 50));
         setPreferredSize(new java.awt.Dimension(760, 610));
 
         jPanel1.setPreferredSize(new java.awt.Dimension(360, 480));
@@ -126,7 +138,8 @@ setLocationRelativeTo(null);
         );
 
         jLabel1.setBackground(new java.awt.Color(51, 107, 5));
-        jLabel1.setFont(new java.awt.Font("Arial Black", 1, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Estadisticas de reciclaje");
         jLabel1.setOpaque(true);
 
@@ -148,23 +161,24 @@ setLocationRelativeTo(null);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
                         .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 284, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap())
+                            .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(29, 29, 29)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 476, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 18, Short.MAX_VALUE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
