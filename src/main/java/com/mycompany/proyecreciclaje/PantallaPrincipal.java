@@ -52,9 +52,11 @@ public class PantallaPrincipal extends javax.swing.JFrame {
                 basuraMouseClicked(evt);
             }
         });
-        jPanel1.add(basura, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 60, 220, -1));
+        jPanel1.add(basura, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 60, 220, -1));
 
-        LogrosBoton.setBackground(new java.awt.Color(51, 107, 5));
+        LogrosBoton.setBackground(new java.awt.Color(61, 110, 10));
+        LogrosBoton.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
+        LogrosBoton.setForeground(new java.awt.Color(0, 0, 0));
         LogrosBoton.setText("🍃Logros");
         LogrosBoton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -63,8 +65,15 @@ public class PantallaPrincipal extends javax.swing.JFrame {
         });
         jPanel1.add(LogrosBoton, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 360, 151, 64));
 
-        MiHistorialBoton.setBackground(new java.awt.Color(51, 107, 5));
+        MiHistorialBoton.setBackground(new java.awt.Color(64, 127, 7));
+        MiHistorialBoton.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
+        MiHistorialBoton.setForeground(new java.awt.Color(0, 0, 0));
         MiHistorialBoton.setText("🍃Mi Historial");
+        MiHistorialBoton.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                MiHistorialBotonMouseClicked(evt);
+            }
+        });
         MiHistorialBoton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 MiHistorialBotonActionPerformed(evt);
@@ -72,7 +81,9 @@ public class PantallaPrincipal extends javax.swing.JFrame {
         });
         jPanel1.add(MiHistorialBoton, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 270, 151, 64));
 
-        TiendaBoton.setBackground(new java.awt.Color(51, 107, 5));
+        TiendaBoton.setBackground(new java.awt.Color(47, 95, 4));
+        TiendaBoton.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
+        TiendaBoton.setForeground(new java.awt.Color(0, 0, 0));
         TiendaBoton.setText("🍃Tienda");
         jPanel1.add(TiendaBoton, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 450, 151, 64));
 
@@ -111,16 +122,16 @@ public class PantallaPrincipal extends javax.swing.JFrame {
 
         jPanel1.add(UsuarioPuntos, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 760, 50));
 
-        Mascota.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/mascota no se.png"))); // NOI18N
-        jPanel1.add(Mascota, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 410, 200, 200));
+        Mascota.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/Mascota1.png"))); // NOI18N
+        jPanel1.add(Mascota, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 410, 220, 200));
 
         LadoOjitasDerecho.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/Foto de los lados ojitas.jpeg"))); // NOI18N
         LadoOjitasDerecho.setText("jLabel5");
-        jPanel1.add(LadoOjitasDerecho, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 50, 80, 560));
+        jPanel1.add(LadoOjitasDerecho, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 50, 60, 560));
 
         LadoOjitasIzquierdo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/Foto de los lados ojitas.jpeg"))); // NOI18N
         LadoOjitasIzquierdo.setText("Lado ojitas");
-        jPanel1.add(LadoOjitasIzquierdo, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 50, 90, 560));
+        jPanel1.add(LadoOjitasIzquierdo, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 50, 70, 560));
 
         MensajeLogros.setBackground(new java.awt.Color(148, 193, 50));
 
@@ -174,6 +185,10 @@ public class PantallaPrincipal extends javax.swing.JFrame {
        botella.setVisible(true);
        dispose();
     }//GEN-LAST:event_basuraMouseClicked
+
+    private void MiHistorialBotonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MiHistorialBotonMouseClicked
+        // TODO add your handling code here
+    }//GEN-LAST:event_MiHistorialBotonMouseClicked
 
     /**
      * @param args the command line arguments
