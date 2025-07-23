@@ -148,10 +148,10 @@ public class PantallaPrincipal extends javax.swing.JFrame {
         );
         MensajeLogrosLayout.setVerticalGroup(
             MensajeLogrosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(MensajeLogrosLayout.createSequentialGroup()
-                .addContainerGap()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, MensajeLogrosLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
 
         jPanel1.add(MensajeLogros, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 50, 150, 40));
@@ -176,6 +176,9 @@ public class PantallaPrincipal extends javax.swing.JFrame {
 
     private void MiHistorialBotonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MiHistorialBotonActionPerformed
         // TODO add your handling code here:
+       Historial entrarGrafica = new Historial ();
+       entrarGrafica.setVisible(true);
+       dispose();
     }//GEN-LAST:event_MiHistorialBotonActionPerformed
 
     private void basuraMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_basuraMouseClicked
@@ -188,6 +191,7 @@ public class PantallaPrincipal extends javax.swing.JFrame {
 
     private void MiHistorialBotonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MiHistorialBotonMouseClicked
         // TODO add your handling code here
+        
     }//GEN-LAST:event_MiHistorialBotonMouseClicked
 
     /**
